@@ -1,0 +1,24 @@
+:root { --bg:#F5F7FA; --ink:#0F1B2D; --amber:#FFB400; --line:#DDE3EC; --mute:#5B6778; }
+* { box-sizing: border-box; }
+body { margin: 0; font-family: 'Space Grotesk', system-ui, sans-serif; background: var(--bg); color: var(--ink); }
+header { display: flex; justify-content: space-between; align-items: center; padding: 18px 32px; border-bottom: 1px solid var(--line); }
+header a { color: inherit; text-decoration: none; }
+.logo { font-weight: 700; font-size: 22px; letter-spacing: -.02em; }
+.logo i { display: inline-block; width: 12px; height: 12px; border-radius: 50%; background: var(--amber); margin-right: 8px; }
+main { max-width: 960px; margin: 0 auto; padding: 32px; }
+h1 { font-size: 44px; letter-spacing: -.03em; margin: 0 0 8px; }
+.sub { color: var(--mute); margin: 0 0 32px; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); gap: 20px; }
+.card { background: #fff; border: 1px solid var(--line); border-radius: 6px; padding: 16px; cursor: pointer; }
+.card:hover { border-color: var(--ink); }
+.swatch { height: 120px; border-radius: 4px; margin-bottom: 12px; display: flex; align-items: center; justify-content: center; font-size: 48px; }
+.price { color: var(--mute); }
+button { font: inherit; cursor: pointer; border: 0; border-radius: 4px; padding: 12px 20px; background: var(--ink); color: #fff; font-weight: 500; }
+button.amber { background: var(--amber); color: var(--ink); }
+.row { display: flex; justify-content: space-between; padding: 12px 0; border-bottom: 1px solid var(--line); }
+.two { display: grid; grid-template-columns: 1.4fr 1fr; gap: 32px; }
+.box { background: #fff; border: 1px solid var(--line); border-radius: 6px; padding: 20px; }
+input { font: inherit; padding: 10px; width: 100%; margin: 6px 0 14px; border: 1px solid var(--line); border-radius: 4px; }
+#dev { position: fixed; right: 12px; bottom: 12px; background: var(--ink); color: #fff; font-size: 12px; padding: 12px; border-radius: 6px; max-width: 260px; }
+#dev button { padding: 6px 10px; font-size: 12px; margin: 4px 4px 0 0; }
+@media (max-width: 700px) { .two { grid-template-columns: 1fr; } }
