@@ -1,0 +1,24 @@
+{
+  "name": "posthog-react-demo",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "seed": "node seed.mjs"
+  },
+  "dependencies": {
+    "@posthog/react": "^1.11.3",
+    "posthog-js": "^1.436.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.26.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.1",
+    "posthog-node": "^4.0.0",
+    "vite": "^5.4.0"
+  }
+}
